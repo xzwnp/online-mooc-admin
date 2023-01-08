@@ -2,20 +2,19 @@ import request from '@/utils/request'
 
 export function login(username, password) {
   return request({
-    url: '/eduservice/user/login',
+    url: '/educenter/member/login',
     method: 'post',
     data: {
-      username,
+      mobile: username,
       password
     }
   })
 }
 
-export function getInfo(token) {
+export function getInfo() {
   return request({
-    url: '/eduservice/user/info',
-    method: 'get',
-    params: { token }
+    url: '/educenter/member/adminInfo',
+    method: 'get'
   })
 }
 

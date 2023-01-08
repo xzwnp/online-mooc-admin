@@ -46,7 +46,6 @@ export default {
       method: 'post'
     })
   },
-  //TODO 课程列表
   //课程最终发布
   getListCourse() {
     return request({
@@ -54,5 +53,4 @@ export default {
       method: 'get'
     })
   }
-
 }

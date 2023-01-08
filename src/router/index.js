@@ -154,15 +154,15 @@ export const constantRouterMap = [
     children: [
       {
         path: 'create',
-        name: '生成统计',
-        component: () => import('@/views/sta/create'),
-        meta: { title: '生成统计', icon: 'table' }
+        name: '分类课程数统计',
+        component: () => import('@/views/sta/subjectCourse'),
+        meta: { title: '分类课程数统计', icon: 'table' }
       },
       {
         path: 'show',
-        name: '图表显示',
+        name: '次数统计',
         component: () => import('@/views/sta/show'),
-        meta: { title: '图表显示', icon: 'table' }
+        meta: { title: '次数统计', icon: 'table' }
       }
     ]
   },
